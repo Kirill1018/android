@@ -6,42 +6,36 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.topacademy_android.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
-    companion object{
-        private const val ON_CREATE = "ON_CREATE"
-    }
-
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        Log.i(ON_CREATE, "Активити создана!")
+        Log.i(null, "program's created")
     }
-
     override fun onStart() {
         super.onStart()
+        Log.i(null, "program's started")
     }
-
-    override fun onResume() {
-        super.onResume()
-    }
-
-    override fun onPause() {
-        super.onPause()
-    }
-
-    override fun onStop() {
-        super.onStop()
-    }
-
     override fun onRestart() {
         super.onRestart()
+        Log.i(null, "program's restarted")
     }
-
+    override fun onResume() {
+        super.onResume()
+        Log.i(null, "program's resumed")
+    }
+    override fun onPause() {
+        super.onPause()
+        Log.i(null, "program's paused")
+    }
+    override fun onStop() {
+        super.onStop()
+        Log.i(null, "program's stopped")
+    }
     override fun onDestroy() {
         super.onDestroy()
+        Log.i(null, "program's destroyed")
     }
 }
