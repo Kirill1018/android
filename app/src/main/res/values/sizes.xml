@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--calculator-->
+    <item name="margVertOfKeyLayOfFirstRow" type="dimen">390dp</item>
+    <item name="margVertOfKeyLayOfSecRow" type="dimen">450dp</item>
+    <item name="margVertOfKeyLayOfThirdRow" type="dimen">510dp</item>
+    <item name="margVertOfKeyLayOfFourthRow" type="dimen">570dp</item>
+    <item name="margVertOfKeyLayOfFifthRow" type="dimen">630dp</item>
+    <item name="margStartOfLayOfFirstCol" type="dimen">30dp</item>
+    <item name="margStartOfLayOfSecCol" type="dimen">120dp</item>
+    <item name="margStartOfLayOfThirdCol" type="dimen">210dp</item>
+    <item name="margStartOfLayOfFourthCol" type="dimen">300dp</item>
+    <item name="layWidthOfMatSwitch" type="dimen">60dp</item>
+    <item name="layHeightOfMatSwitch" type="dimen">60dp</item>
+    <item name="margStartOfLayOfMatSwitch" type="dimen">171dp</item>
+    <item name="layWidthOfTextViewOfLastSolInCalc" type="dimen">360dp</item>
+    <item name="layHeightOfTextViewOfLastSolInCalc" type="dimen">90dp</item>
+    <item name="margVertOfLayOfTextViewOfLastSolInCalc" type="dimen">120dp</item>
+    <item name="textSizeOfLastSol" type="dimen">21sp</item>
+    <item name="layWidthOfTextViewOfSol" type="dimen">360dp</item>
+    <item name="layHeightOfTextViewOfSol" type="dimen">60dp</item>
+    <item name="margVertOfLayOfTextViewOfSol" type="dimen">210dp</item>
+    <item name="layWidthOfRes" type="dimen">360dp</item>
+    <item name="layHeightOfRes" type="dimen">120dp</item>
+    <item name="margVertOfRes" type="dimen">270dp</item>
+    <item name="textSizeOfRes" type="dimen">60sp</item>
+    <item name="layHeightOfView" type="dimen">1dp</item>
+    <item name="margVertOfViewLay" type="dimen">372dp</item>
+    <item name="layWidthOfVoice" type="dimen">90dp</item>
+    <item name="layHeightOfVoice" type="dimen">60dp</item>
+    <item name="margVertOfVoiceLay" type="dimen">60dp</item>
+    <item name="margStartOfVoiceLay" type="dimen">30dp</item>
+    <item name="layWidthOfKey" type="dimen">84dp</item>
+    <item name="layHeightOfKey" type="dimen">60dp</item>
+    <item name="backspace" type="dimen">15sp</item>
+    <item name="textSizeOfChangSignOfNumb" type="dimen">27sp</item>
+    <!--home-->
+    <item name="widthOfCalcButt" type="dimen">120dp</item>
+    <item name="margTopOfList" type="dimen">120dp</item>
+    <item name="weather" type="dimen">180dp</item>
+    <!--main activity-->
+    <item name="margTopOfLayOfTextViewInMainAct" type="dimen">30dp</item>
+    <item name="textSizeOfTextViewInMainAct" type="dimen">30sp</item>
+    <item name="layWidthOfMatButtInMainAct" type="dimen">90dp</item>
+    <item name="layHeightOfMatButtInMainAct" type="dimen">48dp</item>
+    <item name="margTopOfLayOfMatButtInMainAct" type="dimen">60dp</item>
+</resources>
