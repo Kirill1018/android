@@ -1,9 +1,11 @@
 package com.example.topacademy_android
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.topacademy_android.databinding.ActivityMainBinding
+import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -13,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         Log.i(null, "program's created")
+        val matButt: MaterialButton = findViewById(R.id.material)//updated material styles
+        matButt.setOnClickListener { startActivity(Intent(this, HomeActivity::class.java).apply {  }) }
     }
     override fun onStart() {
         super.onStart()

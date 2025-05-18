@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator">
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/mode"
+        android:layout_width="@dimen/layWidthOfMatSwitch"
+        android:layout_height="@dimen/layHeightOfMatSwitch"
+        android:layout_marginStart="@dimen/margStartOfLayOfMatSwitch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="@dimen/layWidthOfTextViewOfLastSolInCalc"
+        android:layout_height="@dimen/layHeightOfTextViewOfLastSolInCalc"
+        android:layout_marginVertical="@dimen/margVertOfLayOfTextViewOfLastSolInCalc"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/textSizeOfLastSol"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="@dimen/layWidthOfTextViewOfSol"
+        android:layout_height="@dimen/layHeightOfTextViewOfSol"
+        android:layout_marginVertical="@dimen/margVertOfLayOfTextViewOfSol"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/textSizeOfTextViewInMainAct"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="@dimen/layWidthOfRes"
+        android:layout_height="@dimen/layHeightOfRes"
+        android:layout_marginVertical="@dimen/margVertOfRes"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/textSizeOfRes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layHeightOfView"
+        android:layout_marginVertical="@dimen/margVertOfViewLay"
+        android:background="@color/gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/vox"
+        android:layout_width="@dimen/layWidthOfVoice"
+        android:layout_height="@dimen/layHeightOfVoice"
+        android:layout_marginVertical="@dimen/margVertOfVoiceLay"
+        android:layout_marginStart="@dimen/margStartOfVoiceLay"
+        android:text="@string/vote"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFirstRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfFirstCol"
+        android:text="@string/totClear"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFirstRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfSecCol"
+        android:text="@string/backspace"
+        android:textSize="@dimen/backspace"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFirstRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfThirdCol"
+        android:text="@string/percentage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/rightCol"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFirstRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfFourthCol"
+        android:text="@string/division"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfSecRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfFirstCol"
+        android:text="@string/seven"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfSecRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfSecCol"
+        android:text="@string/eight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfSecRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfThirdCol"
+        android:text="@string/nine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/rightCol"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfSecRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfFourthCol"
+        android:text="@string/multiplying"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfThirdRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfFirstCol"
+        android:text="@string/four"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfThirdRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfSecCol"
+        android:text="@string/five"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfThirdRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfThirdCol"
+        android:text="@string/six"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/rightCol"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfThirdRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfFourthCol"
+        android:text="@string/subtracting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFourthRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfFirstCol"
+        android:text="@string/one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFourthRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfSecCol"
+        android:text="@string/two"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFourthRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfThirdCol"
+        android:text="@string/three"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/rightCol"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFourthRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfFourthCol"
+        android:text="@string/addition"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFifthRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfFirstCol"
+        android:text="@string/zero"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFifthRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfSecCol"
+        android:text="@string/decNumb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/key"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFifthRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfThirdCol"
+        android:text="@string/changNumbSign"
+        android:textSize="@dimen/textSizeOfChangSignOfNumb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/rightCol"
+        android:layout_width="@dimen/layWidthOfKey"
+        android:layout_height="@dimen/layHeightOfKey"
+        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFifthRow"
+        android:layout_marginStart="@dimen/margStartOfLayOfFourthCol"
+        android:text="@string/equality"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="gray">#6a6c6a</color>
+    <color name="textColOfTextViewInMainAct">#008000</color>
+    <color name="yellow">#ffffe0</color>
     <color name="black">#FF000000</color>
+    <color name="orange">#ffa000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="darkGray">#5a5b5a</color>
+    <color name="darkGreen">#123524</color>
+    <color name="darkOr">#ff8e00</color>
 </resources>

@@ -1,5 +1,33 @@
 <resources>
+    <!--calculator-->
+    <string name="vote">voice</string>
+    <string name="totClear">c</string>
+    <string name="backspace">back</string>
+    <string name="percentage">%</string>
+    <string name="division">/</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="multiplying">x</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="subtracting">-</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="addition">+</string>
+    <string name="zero">0</string>
+    <string name="decNumb">.</string>
+    <string name="changNumbSign">+/-</string>
+    <string name="equality">=</string>
+    <!--main activity-->
     <string name="app_name">TopacAdemy_android</string>
     <string name="behalf">kirill</string>
     <string name="beginning">start</string>
+    <!--home-->
+    <string name="homeAct">home activity is opened</string>
+    <string name="calculator_">calculator</string>
+    <string name="listing">list</string>
+    <string name="weather_">weather</string>
 </resources>
