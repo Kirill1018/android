@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         Log.i(null, "program's started")
     }
     override fun onRestart() {
-        super.onRestart()//1
+        super.onRestart()
         Log.i(null, "program's restarted")
     }
     override fun onResume() {
