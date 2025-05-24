@@ -20,6 +20,7 @@
     <item name="layWidthOfTextViewOfSol" type="dimen">360dp</item>
     <item name="layHeightOfTextViewOfSol" type="dimen">60dp</item>
     <item name="margVertOfLayOfTextViewOfSol" type="dimen">210dp</item>
+    <item name="textSizeOfTextViewOfSol" type="dimen">30sp</item>
     <item name="layWidthOfRes" type="dimen">360dp</item>
     <item name="layHeightOfRes" type="dimen">120dp</item>
     <item name="margVertOfRes" type="dimen">270dp</item>
@@ -36,12 +37,18 @@
     <item name="textSizeOfChangSignOfNumb" type="dimen">27sp</item>
     <!--home-->
     <item name="widthOfCalcButt" type="dimen">120dp</item>
-    <item name="margTopOfList" type="dimen">120dp</item>
+    <item name="margVertOfCalcLay" type="dimen">60dp</item>
+    <item name="margVertOfListLay" type="dimen">120dp</item>
     <item name="weather" type="dimen">180dp</item>
     <!--main activity-->
-    <item name="margTopOfLayOfTextViewInMainAct" type="dimen">30dp</item>
-    <item name="textSizeOfTextViewInMainAct" type="dimen">30sp</item>
     <item name="layWidthOfMatButtInMainAct" type="dimen">90dp</item>
     <item name="layHeightOfMatButtInMainAct" type="dimen">48dp</item>
-    <item name="margTopOfLayOfMatButtInMainAct" type="dimen">60dp</item>
+    <item name="margVertOfLayOfMatButtInMainAct" type="dimen">120dp</item>
+    <item name="layWidthOfEdTextOfLog" type="dimen">300dp</item>
+    <item name="layHeightOfEdTextOfLog" type="dimen">60dp</item>
+    <item name="layWidthOfEdTextOfPar" type="dimen">300dp</item>
+    <item name="layHeightOfEdTextOfPar" type="dimen">60dp</item>
+    <item name="margVertOfLayOfEdTextOfPar" type="dimen">60dp</item>
+    <!--weather-->
+    <item name="textSizeOfWeather" type="dimen">30sp</item>
 </resources>

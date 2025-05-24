@@ -18,7 +18,7 @@
         android:id="@+id/calcButt"
         android:layout_width="@dimen/widthOfCalcButt"
         android:layout_height="@dimen/layHeightOfMatButtInMainAct"
-        android:layout_marginTop="@dimen/margTopOfLayOfMatButtInMainAct"
+        android:layout_marginVertical="@dimen/margVertOfCalcLay"
         android:text="@string/calculator_"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +27,7 @@
         android:id="@+id/listButt"
         android:layout_width="@dimen/widthOfCalcButt"
         android:layout_height="@dimen/layHeightOfMatButtInMainAct"
-        android:layout_marginTop="@dimen/margTopOfList"
+        android:layout_marginVertical="@dimen/margVertOfListLay"
         android:text="@string/listing"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -4,18 +4,25 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+
     <style name="vox">
         <item name="android:backgroundTint">@color/darkGray</item>
         <item name="android:textColor">@color/white</item>
     </style>
+
     <style name="key">
         <item name="android:backgroundTint">@color/darkGreen</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">30sp</item>
     </style>
+
     <style name="rightCol">
         <item name="android:backgroundTint">@color/darkOr</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="textBoxInMainAct">
+        <item name="android:textColor">@color/lightGreen</item>
     </style>
 </resources>

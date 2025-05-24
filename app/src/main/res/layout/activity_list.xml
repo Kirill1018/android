@@ -7,15 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".List">
 
-    <TextView
-        android:id="@+id/text_view_id"
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/margTopOfLayOfTextViewInMainAct"
-        android:text="@string/listing"
-        android:textColor="@color/textColOfTextViewInMainAct"
-        android:textSize="@dimen/textSizeOfTextViewInMainAct"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:entries="@array/listIt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,8 +23,9 @@
     <string name="equality">=</string>
     <!--main activity-->
     <string name="app_name">TopacAdemy_android</string>
-    <string name="behalf">kirill</string>
+    <string name="behalf">login</string>
     <string name="beginning">start</string>
+    <string name="parole">password</string>
     <!--home-->
     <string name="homeAct">home activity is opened</string>
     <string name="calculator_">calculator</string>

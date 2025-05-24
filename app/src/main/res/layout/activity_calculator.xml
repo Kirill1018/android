@@ -30,7 +30,7 @@
         android:layout_height="@dimen/layHeightOfTextViewOfSol"
         android:layout_marginVertical="@dimen/margVertOfLayOfTextViewOfSol"
         android:textAlignment="viewEnd"
-        android:textSize="@dimen/textSizeOfTextViewInMainAct"
+        android:textSize="@dimen/textSizeOfTextViewOfSol"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

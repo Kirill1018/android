@@ -7,15 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Weather">
 
-    <TextView
-        android:id="@+id/text_view_id"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/margTopOfLayOfTextViewInMainAct"
-        android:text="@string/weather_"
-        android:textColor="@color/textColOfTextViewInMainAct"
-        android:textSize="@dimen/textSizeOfTextViewInMainAct"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
