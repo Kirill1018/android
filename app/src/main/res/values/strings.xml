@@ -27,7 +27,7 @@
     <string name="beginning">start</string>
     <string name="parole">password</string>
     <!--home-->
-    <string name="homeAct">home activity is opened</string>
+    <string name="homeAct">home activity</string>
     <string name="calculator_">calculator</string>
     <string name="listing">list</string>
     <string name="weather_">weather</string>
