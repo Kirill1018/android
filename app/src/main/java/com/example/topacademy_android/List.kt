@@ -1,6 +1,9 @@
 package com.example.topacademy_android
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +19,20 @@ class List : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val firstCar = Car("car 1", "n9", 2025,
+            "cvt", 7399000, R.drawable.car1)//data object of first car
+        val secCar = Car("car 2", "m7", 2024,
+            "automatic transmission", 5250000, R.drawable.car2)//data object of second car
+        val thirdCar = Car("car 3", "l6", 2024,
+            "automatic transmission", 4424000, R.drawable.car3)//data object of third car
+        val cars: ArrayList<Car?> = ArrayList()//car collection
+        cars.add(firstCar)
+        cars.add(secCar)
+        cars.add(thirdCar)
+        val listAdapter = ListAdapter(this@List, cars)//broker between ui component and data source
+        val listView: ListView = findViewById(R.id.machines)//scrollable items
+        listView.adapter = listAdapter//filling data
+        val retButt: Button = findViewById(R.id.backButt)
+        retButt.setOnClickListener { startActivity(Intent(this, HomeActivity::class.java)) }
     }
 }

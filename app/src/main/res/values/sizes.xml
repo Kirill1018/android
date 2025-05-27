@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--common sizes-->
+    <item name="layHeightOfToolPan" type="dimen">60dp</item>
+    <item name="layWidthOfBackButt" type="dimen">90dp</item>
+    <item name="textSizeOfKey" type="dimen">30sp</item>
+    <item name="textSizeOfRightCol" type="dimen">30sp</item>
     <!--calculator-->
     <item name="margVertOfKeyLayOfFirstRow" type="dimen">390dp</item>
     <item name="margVertOfKeyLayOfSecRow" type="dimen">450dp</item>
@@ -13,6 +18,7 @@
     <item name="layWidthOfMatSwitch" type="dimen">60dp</item>
     <item name="layHeightOfMatSwitch" type="dimen">60dp</item>
     <item name="margStartOfLayOfMatSwitch" type="dimen">171dp</item>
+    <item name="margVertOfLayOfMatSwitch" type="dimen">60dp</item>
     <item name="layWidthOfTextViewOfLastSolInCalc" type="dimen">360dp</item>
     <item name="layHeightOfTextViewOfLastSolInCalc" type="dimen">90dp</item>
     <item name="margVertOfLayOfTextViewOfLastSolInCalc" type="dimen">120dp</item>
@@ -27,28 +33,47 @@
     <item name="textSizeOfRes" type="dimen">60sp</item>
     <item name="layHeightOfView" type="dimen">1dp</item>
     <item name="margVertOfViewLay" type="dimen">372dp</item>
-    <item name="layWidthOfVoice" type="dimen">90dp</item>
-    <item name="layHeightOfVoice" type="dimen">60dp</item>
-    <item name="margVertOfVoiceLay" type="dimen">60dp</item>
-    <item name="margStartOfVoiceLay" type="dimen">30dp</item>
     <item name="layWidthOfKey" type="dimen">84dp</item>
     <item name="layHeightOfKey" type="dimen">60dp</item>
     <item name="backspace" type="dimen">15sp</item>
     <item name="textSizeOfChangSignOfNumb" type="dimen">27sp</item>
     <!--home-->
+    <item name="margVertOfHomeAct" type="dimen">60dp</item>
     <item name="widthOfCalcButt" type="dimen">120dp</item>
-    <item name="margVertOfCalcLay" type="dimen">60dp</item>
-    <item name="margVertOfListLay" type="dimen">120dp</item>
-    <item name="weather" type="dimen">180dp</item>
+    <item name="margVertOfCalcLay" type="dimen">120dp</item>
+    <item name="margVertOfListLay" type="dimen">180dp</item>
+    <item name="weather" type="dimen">240dp</item>
     <!--main activity-->
-    <item name="layWidthOfMatButtInMainAct" type="dimen">90dp</item>
+    <item name="layWidthOfLimLayOfAuth" type="dimen">300dp</item>
+    <item name="layHeightOfLimLayOfAuth" type="dimen">300dp</item>
+    <item name="margVertOfLayOfLimLayOfAuth" type="dimen">90dp</item>
+    <item name="margStartOfLayOfLimLayOfAuth" type="dimen">60dp</item>
+    <item name="layWidthOfTextViewOfLog" type="dimen">300dp</item>
+    <item name="layHeightOfTextViewOfLog" type="dimen">60dp</item>
+    <item name="layWidthOfMatButtInMainAct" type="dimen">210dp</item>
     <item name="layHeightOfMatButtInMainAct" type="dimen">48dp</item>
-    <item name="margVertOfLayOfMatButtInMainAct" type="dimen">120dp</item>
-    <item name="layWidthOfEdTextOfLog" type="dimen">300dp</item>
+    <item name="margVertOfLayOfMatButtInMainAct" type="dimen">180dp</item>
+    <item name="layWidthOfEdTextOfLog" type="dimen">210dp</item>
     <item name="layHeightOfEdTextOfLog" type="dimen">60dp</item>
-    <item name="layWidthOfEdTextOfPar" type="dimen">300dp</item>
+    <item name="margVertOfLayOfEdTextOfLog" type="dimen">60dp</item>
+    <item name="margStartOfAuthLay" type="dimen">30dp</item>
+    <item name="textSizeOfLog" type="dimen">30sp</item>
+    <item name="layWidthOfEdTextOfPar" type="dimen">210dp</item>
     <item name="layHeightOfEdTextOfPar" type="dimen">60dp</item>
-    <item name="margVertOfLayOfEdTextOfPar" type="dimen">60dp</item>
+    <item name="margVertOfLayOfEdTextOfPar" type="dimen">120dp</item>
     <!--weather-->
     <item name="textSizeOfWeather" type="dimen">30sp</item>
+    <!--list-->
+    <item name="layWidthOfLimLayInList" type="dimen">410dp</item>
+    <item name="layHeightOfLimLayInList" type="dimen">720dp</item>
+    <item name="margVertOfLayOfListViewInList" type="dimen">60dp</item>
+    <!--listIt-->
+    <item name="layHeightOfListIt" type="dimen">60dp</item>
+    <item name="margVertOfLayOfListMod" type="dimen">60dp</item>
+    <item name="margVertOfLayOfListYear" type="dimen">120dp</item>
+    <item name="margVertOfLayOfListDescr" type="dimen">180dp</item>
+    <item name="margVertOfLayOfListCost" type="dimen">240dp</item>
+    <item name="layWidthOfImViewInListIt" type="dimen">300dp</item>
+    <item name="layHeightOfImViewInListIt" type="dimen">300dp</item>
+    <item name="margVertOfLayOfImViewInListIt" type="dimen">300dp</item>
 </resources>

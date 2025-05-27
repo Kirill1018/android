@@ -1,6 +1,6 @@
 <resources>
     <!--calculator-->
-    <string name="vote">voice</string>
+    <string name="back">return</string>
     <string name="totClear">c</string>
     <string name="backspace">back</string>
     <string name="percentage">%</string>
@@ -26,6 +26,7 @@
     <string name="behalf">login</string>
     <string name="beginning">start</string>
     <string name="parole">password</string>
+    <string name="logInToProf">log in to profile</string>
     <!--home-->
     <string name="homeAct">home activity</string>
     <string name="calculator_">calculator</string>

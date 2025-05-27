@@ -7,20 +7,16 @@
 
     <style name="Theme.TopacAdemy_android" parent="Base.Theme.TopacAdemy_android" />
 
-    <style name="vox">
-        <item name="android:backgroundTint">@color/gray</item>
-    </style>
-
     <style name="key">
         <item name="android:backgroundTint">@color/yellow</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">@dimen/textSizeOfKey</item>
     </style>
 
     <style name="rightCol">
         <item name="android:backgroundTint">@color/orange</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">@dimen/textSizeOfRightCol</item>
     </style>
 
     <style name="textBoxInMainAct" />
