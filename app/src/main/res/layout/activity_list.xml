@@ -3,14 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="@dimen/layWidthOfLimLayInList"
+    android:layout_height="@dimen/layHeightOfLimLayInList"
     tools:context=".List">
 
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layHeightOfToolPan"
+        android:background="@color/purple"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backButt"
+            android:layout_width="@dimen/layWidthOfBackButt"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/arrow"
+            android:text="@string/back"
+            android:textAlignment="textStart" />
+    </Toolbar>
+
     <ListView
+        android:id="@+id/machines"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:entries="@array/listIt"
+        android:layout_marginVertical="@dimen/margVertOfLayOfListViewInList"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/list_it" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,10 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".Calculator">
 
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layHeightOfToolPan"
+        android:background="@color/purple"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backButt"
+            android:layout_width="@dimen/layWidthOfBackButt"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/arrow"
+            android:text="@string/back"
+            android:textAlignment="textStart" />
+    </Toolbar>
+
     <com.google.android.material.materialswitch.MaterialSwitch
         android:id="@+id/mode"
         android:layout_width="@dimen/layWidthOfMatSwitch"
         android:layout_height="@dimen/layHeightOfMatSwitch"
+        android:layout_marginVertical="@dimen/margVertOfLayOfMatSwitch"
         android:layout_marginStart="@dimen/margStartOfLayOfMatSwitch"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,16 +65,6 @@
         android:layout_height="@dimen/layHeightOfView"
         android:layout_marginVertical="@dimen/margVertOfViewLay"
         android:background="@color/gray"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.button.MaterialButton
-        style="@style/vox"
-        android:layout_width="@dimen/layWidthOfVoice"
-        android:layout_height="@dimen/layHeightOfVoice"
-        android:layout_marginVertical="@dimen/margVertOfVoiceLay"
-        android:layout_marginStart="@dimen/margStartOfVoiceLay"
-        android:text="@string/vote"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

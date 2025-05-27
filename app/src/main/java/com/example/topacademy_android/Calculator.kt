@@ -1,6 +1,8 @@
 package com.example.topacademy_android
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -23,5 +25,7 @@ class Calculator : AppCompatActivity() {
             if (matSwitch.isChecked) AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
+        val retButt: Button = findViewById(R.id.backButt)//ability to press for taking place of action
+        retButt.setOnClickListener { startActivity(Intent(this, HomeActivity::class.java)) }
     }
 }

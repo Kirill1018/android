@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Weather">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <Toolbar
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="@dimen/layHeightOfToolPan"
+        android:background="@color/purple"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/backButt"
+            android:layout_width="@dimen/layWidthOfBackButt"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/arrow"
+            android:text="@string/back"
+            android:textAlignment="textStart" />
+    </Toolbar>
 </androidx.constraintlayout.widget.ConstraintLayout>
