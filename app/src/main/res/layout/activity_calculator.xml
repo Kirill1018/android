@@ -18,6 +18,7 @@
             android:id="@+id/backButt"
             android:layout_width="@dimen/layWidthOfBackButt"
             android:layout_height="match_parent"
+            android:background="@color/darkGray"
             android:foreground="@drawable/arrow"
             android:text="@string/back"
             android:textAlignment="textStart" />
