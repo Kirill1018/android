@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.topacademy_android"
-        minSdk = 36
+        minSdk = 33
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -46,7 +46,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.filament.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.com.retrofit)
+    implementation(libs.com.gson)
+    implementation(libs.com.interseptor)
 }

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="@dimen/layWidthOfLimLayInList"
+    android:layout_width="match_parent"
     android:layout_height="@dimen/layHeightOfLimLayInList"
     tools:context=".List">
 
@@ -18,12 +18,13 @@
             android:id="@+id/backButt"
             android:layout_width="@dimen/layWidthOfBackButt"
             android:layout_height="match_parent"
+            android:background="@color/darkGray"
             android:foreground="@drawable/arrow"
             android:text="@string/back"
             android:textAlignment="textStart" />
     </Toolbar>
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/machines"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

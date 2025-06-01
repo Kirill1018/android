@@ -9,9 +9,10 @@ import android.os.Bundle
 import android.util.TypedValue
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.graphics.toColorInt
-import com.example.topacademy_android.databinding.ActivityMainBinding
-import com.google.android.material.button.MaterialButton
+import com.example.topacademy_android.databinding
+    .ActivityMainBinding
+import com.google.android.material
+    .button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -26,10 +27,10 @@ class MainActivity : AppCompatActivity() {
         val edText2: EditText = findViewById(R.id.passphrase)//login overlay over text view that configures itself to be editable
         val bordRadOfEdText = 2//boundary radius of edit text
         val cornRadOfEdText = 10//nook radius of edit text
-        edText1.background = roundedCornerDrawable(bordRadOfEdText.dpToPixels(applicationContext), "#58111A".toColorInt(), cornRadOfEdText
-            .dpToPixels(applicationContext).toFloat())//background of first text of editing
-        edText2.background = roundedCornerDrawable(borderWidth = bordRadOfEdText, borderColor = "#E30022".toColorInt(), cornerRadius = cornRadOfEdText.dpToPixels(applicationContext)
-            .toFloat(), bgColor = "#EFDFBB".toColorInt())//background of second text of editing
+        edText1.background = roundedCornerDrawable(bordRadOfEdText.dpToPixels(applicationContext), R.color
+            .darkScar, cornRadOfEdText.dpToPixels(applicationContext).toFloat())//background of first text of editing
+        edText2.background = roundedCornerDrawable(borderWidth = bordRadOfEdText, borderColor = R.color.carmine, cornerRadius = cornRadOfEdText
+            .dpToPixels(applicationContext).toFloat(), bgColor = R.color.wheat)//background of second text of editing
     }
 }
 fun roundedCornerDrawable(borderWidth: Int = 10, borderColor: Int = Color.DKGRAY, cornerRadius: Float = 25F,

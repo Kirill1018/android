@@ -62,12 +62,16 @@
     <item name="layHeightOfEdTextOfPar" type="dimen">60dp</item>
     <item name="margVertOfLayOfEdTextOfPar" type="dimen">120dp</item>
     <!--weather-->
-    <item name="textSizeOfWeather" type="dimen">30sp</item>
+    <item name="layWidthOfVog" type="dimen">90dp</item>
+    <item name="layHeightOfVog" type="dimen">60dp</item>
+    <item name="margVertOfVogLay" type="dimen">60dp</item>
+    <item name="margStartOfVogLay" type="dimen">150dp</item>
+    <item name="margVertOfRecView" type="dimen">120dp</item>
     <!--list-->
-    <item name="layWidthOfLimLayInList" type="dimen">410dp</item>
     <item name="layHeightOfLimLayInList" type="dimen">720dp</item>
     <item name="margVertOfLayOfListViewInList" type="dimen">60dp</item>
     <!--listIt-->
+    <item name="layHeightOfLimLayInListIt" type="dimen">720dp</item>
     <item name="layHeightOfListIt" type="dimen">60dp</item>
     <item name="margVertOfLayOfListMod" type="dimen">60dp</item>
     <item name="margVertOfLayOfListYear" type="dimen">120dp</item>
@@ -76,4 +80,12 @@
     <item name="layWidthOfImViewInListIt" type="dimen">300dp</item>
     <item name="layHeightOfImViewInListIt" type="dimen">300dp</item>
     <item name="margVertOfLayOfImViewInListIt" type="dimen">300dp</item>
+    <!--recIt-->
+    <item name="layHeightOfLimLayInRecIt" type="dimen">150dp</item>
+    <item name="layHeightOfTemp" type="dimen">60dp</item>
+    <item name="layHeightOfWeather" type="dimen">60dp</item>
+    <item name="margVertOfWeatherLay" type="dimen">60dp</item>
+    <item name="layWidthOfFor" type="dimen">30dp</item>
+    <item name="layHeightOfFor" type="dimen">30dp</item>
+    <item name="margVertOfForLay" type="dimen">120dp</item>
 </resources>

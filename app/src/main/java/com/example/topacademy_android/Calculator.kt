@@ -8,7 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.android.material.materialswitch.MaterialSwitch
+import com.google.android.material
+    .materialswitch.MaterialSwitch
 
 class Calculator : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
