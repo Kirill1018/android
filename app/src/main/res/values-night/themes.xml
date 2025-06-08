@@ -20,6 +20,7 @@
     <style name="textBoxInMainAct">
         <item name="android:textColor">@color/lightGreen</item>
     </style>
+
     <style name="prognostication">
         <item name="android:background">@color/darkGray</item>
     </style>

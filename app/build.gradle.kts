@@ -6,14 +6,12 @@ plugins {
 android {
     namespace = "com.example.topacademy_android"
     compileSdk = 35
-
     buildFeatures{
         viewBinding = true
     }
-
     defaultConfig {
         applicationId = "com.example.topacademy_android"
-        minSdk = 33
+        minSdk = 27
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -40,7 +38,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -53,4 +50,7 @@ dependencies {
     implementation(libs.com.retrofit)
     implementation(libs.com.gson)
     implementation(libs.com.interseptor)
+    implementation(libs.dev.karith)
+    implementation(libs.androidx.viewmodel)
+    implementation(libs.androidx.livedata)
 }

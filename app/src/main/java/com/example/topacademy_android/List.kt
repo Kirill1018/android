@@ -2,14 +2,14 @@ package com.example.topacademy_android
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.topacademy_android.domLay
+import com.example.topacademy_android.domain
     .Car
 
 class List : AppCompatActivity() {
@@ -25,18 +25,18 @@ class List : AppCompatActivity() {
         val firstCar = Car("car 1", "n9", 2025,
             "cvt", 7399000, R.drawable.car1)//data object of first car
         val secCar = Car("car 2", "m7", 2024,
-            "automatic transmission", 5250000, R.drawable.car2)//data object of second car
+            "automatic transmission", 5250000, R.drawable.car2)
         val thirdCar = Car("car 3", "l6", 2024,
-            "automatic transmission", 4424000, R.drawable.car3)//data object of third car
-        val cars = ArrayList<Car>()//car collection
+            "automatic transmission", 4424000, R.drawable.car3)
+        val cars = ArrayList<Car>()
         cars.add(firstCar)
         cars.add(secCar)
         cars.add(thirdCar)
         val carAdapter = CarAdapter(cars.toList())//broker between ui component and data source
-        val recycler: RecyclerView = findViewById(R.id.machines)//scrollable items
+        val recycler: RecyclerView = findViewById(R.id.machines)
         recycler.layoutManager = LinearLayoutManager(this)
-        recycler.adapter = carAdapter//filling data
-        val retButt: Button = findViewById(R.id.backButt)
-        retButt.setOnClickListener { startActivity(Intent(this, HomeActivity::class.java)) }
+        recycler.adapter = carAdapter
+        val toolBar: Toolbar = findViewById(R.id.tools)
+        toolBar.setNavigationOnClickListener { startActivity(Intent(this, HomeActivity::class.java)) }
     }
 }

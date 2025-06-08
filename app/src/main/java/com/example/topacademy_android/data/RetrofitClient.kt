@@ -1,7 +1,5 @@
-package com.example.topacademy_android.dataLay
+package com.example.topacademy_android.data
 
-import com.example.topacademy_android.domLay
-    .WeatherApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

@@ -2,7 +2,7 @@ package com.example.topacademy_android
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,12 +21,12 @@ class HomeActivity : AppCompatActivity() {
             insets
         }
         val calcButt: MaterialButton = findViewById(R.id.calcButt)//updated material styles of calculator button
-        val listButt: MaterialButton = findViewById(R.id.listButt)//updated material styles of list button
-        val weather: MaterialButton = findViewById(R.id.temperature)//updated material styles of weather button
+        val listButt: MaterialButton = findViewById(R.id.listButt)
+        val weather: MaterialButton = findViewById(R.id.temperature)
         calcButt.setOnClickListener { startActivity(Intent(this, Calculator::class.java).apply {  }) }
         listButt.setOnClickListener { startActivity(Intent(this, List::class.java).apply {  }) }
         weather.setOnClickListener { startActivity(Intent(this, Weather::class.java).apply {  }) }
-        val retButt: Button = findViewById(R.id.backButt)
-        retButt.setOnClickListener { startActivity(Intent(this, MainActivity::class.java)) }
+        val toolBar: Toolbar = findViewById(R.id.tools)
+        toolBar.setNavigationOnClickListener { startActivity(Intent(this, MainActivity::class.java)) }
     }
 }

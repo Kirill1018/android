@@ -2,7 +2,7 @@ package com.example.topacademy_android
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -10,9 +10,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.topacademy_android.dataLay
+import com.example.topacademy_android.data
     .RetrofitClient
-import com.example.topacademy_android.domLay
+import com.example.topacademy_android.domain
     .WeatherResponse
 import com.google.android.material
     .materialswitch.MaterialSwitch
@@ -30,11 +30,11 @@ class Weather : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val retButt: Button = findViewById(R.id.backButt)
-        retButt.setOnClickListener { startActivity(Intent(this, HomeActivity::class.java)) }
+        val toolBar: Toolbar = findViewById(R.id.tools)
+        toolBar.setNavigationOnClickListener { startActivity(Intent(this, HomeActivity::class.java)) }
         val recycler: RecyclerView = findViewById(R.id.recView)//flexible module and productive component for display lists
-        recycler.layoutManager = LinearLayoutManager(this)//element placement
-        val nightMode = AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES//check mode
+        recycler.layoutManager = LinearLayoutManager(this)
+        val nightMode = AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES
         val modeSwitch: MaterialSwitch = findViewById(R.id.vogue)
         modeSwitch.setOnClickListener {
             if (modeSwitch.isChecked) changeTheme(AppCompatDelegate.MODE_NIGHT_YES, recycler)
@@ -48,16 +48,14 @@ fun fetchWeather(latitude: Double, longitude: Double, recBoil: RecyclerView,
                  mode: Boolean) {
     val call = RetrofitClient.weatherApi.weatherForecast(latitude = latitude, longitude = longitude)//invocation of a retrofit method that sends a request to a webserver and returns a response
     call.enqueue(object: Callback<WeatherResponse> {
-        override fun onResponse(call: Call<WeatherResponse>, response: Response<WeatherResponse>) {
-            if (response.isSuccessful) {
-                val weatherData = response.body()//response
-                val series = weatherData?.dataseries//data series
-                val adapter = RecAdapter(series!!, mode)//broker between ui component and data source
-                recBoil.adapter = adapter//directing data source
-            }
-            else println("error: ${response.code()}")
+        override fun onResponse(call: Call<WeatherResponse>, response: Response<WeatherResponse>) { if (response.isSuccessful) {
+            val weatherData = response.body()//response
+            val series = weatherData?.dataseries
+            val adapter = RecAdapter(series!!, mode)
+            recBoil.adapter = adapter
         }
-        override fun onFailure(call: Call<WeatherResponse>, t: Throwable) = println("network error: ${t.message}")
+        }
+        override fun onFailure(call: Call<WeatherResponse>, t: Throwable) { }
     })
 }
 fun changeTheme(theme: Int, boiler: RecyclerView) {

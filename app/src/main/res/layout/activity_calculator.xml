@@ -8,21 +8,13 @@
     tools:context=".Calculator">
 
     <Toolbar
+        android:id="@+id/tools"
         android:layout_width="match_parent"
         android:layout_height="@dimen/layHeightOfToolPan"
         android:background="@color/purple"
+        android:navigationIcon="@drawable/arrow"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/backButt"
-            android:layout_width="@dimen/layWidthOfBackButt"
-            android:layout_height="match_parent"
-            android:background="@color/darkGray"
-            android:foreground="@drawable/arrow"
-            android:text="@string/back"
-            android:textAlignment="textStart" />
-    </Toolbar>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.materialswitch.MaterialSwitch
         android:id="@+id/mode"
@@ -34,26 +26,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="@dimen/layWidthOfTextViewOfLastSolInCalc"
-        android:layout_height="@dimen/layHeightOfTextViewOfLastSolInCalc"
-        android:layout_marginVertical="@dimen/margVertOfLayOfTextViewOfLastSolInCalc"
-        android:textAlignment="viewEnd"
-        android:textColor="@color/gray"
-        android:textSize="@dimen/textSizeOfLastSol"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="@dimen/layWidthOfTextViewOfSol"
-        android:layout_height="@dimen/layHeightOfTextViewOfSol"
-        android:layout_marginVertical="@dimen/margVertOfLayOfTextViewOfSol"
-        android:textAlignment="viewEnd"
-        android:textSize="@dimen/textSizeOfTextViewOfSol"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="@dimen/layWidthOfRes"
+        android:id="@+id/outcome"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/layHeightOfRes"
         android:layout_marginVertical="@dimen/margVertOfRes"
         android:textAlignment="viewEnd"
@@ -70,6 +44,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/clear"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -80,6 +55,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/backward"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -91,6 +67,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/percent"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -101,6 +78,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/division"
         style="@style/rightCol"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -111,6 +89,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/seven"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -121,6 +100,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/eight"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -131,6 +111,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/nine"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -141,6 +122,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/multiplication"
         style="@style/rightCol"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -151,6 +133,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/four"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -161,6 +144,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/five"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -171,6 +155,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/six"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -181,6 +166,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/substracting"
         style="@style/rightCol"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -191,6 +177,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/one"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -201,6 +188,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/two"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -211,6 +199,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/three"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -221,6 +210,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/addition"
         style="@style/rightCol"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -231,6 +221,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/zero"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -241,6 +232,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/dot"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -251,6 +243,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/changSign"
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
@@ -262,6 +255,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/result"
         style="@style/rightCol"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
