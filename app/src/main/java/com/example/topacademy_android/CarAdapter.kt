@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.example.topacademy_android.domLay
+import com.example.topacademy_android.domain
     .Car
 import com.google.android.material
     .imageview.ShapeableImageView

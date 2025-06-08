@@ -24,21 +24,22 @@ class MainActivity : AppCompatActivity() {
         val matButt: MaterialButton = findViewById(R.id.material)
         matButt.setOnClickListener { startActivity(Intent(this, HomeActivity::class.java).apply {  }) }
         val edText1: EditText = findViewById(R.id.login)//password overlay over text view that configures itself to be editable
-        val edText2: EditText = findViewById(R.id.passphrase)//login overlay over text view that configures itself to be editable
-        val bordRadOfEdText = 2//boundary radius of edit text
-        val cornRadOfEdText = 10//nook radius of edit text
+        val edText2: EditText = findViewById(R.id.passphrase)
+        val bordRadOfEdText = 2
+        val cornRadOfEdText = 10
         edText1.background = roundedCornerDrawable(bordRadOfEdText.dpToPixels(applicationContext), R.color
-            .darkScar, cornRadOfEdText.dpToPixels(applicationContext).toFloat())//background of first text of editing
+            .darkScar, cornRadOfEdText.dpToPixels(applicationContext).toFloat())
         edText2.background = roundedCornerDrawable(borderWidth = bordRadOfEdText, borderColor = R.color.carmine, cornerRadius = cornRadOfEdText
-            .dpToPixels(applicationContext).toFloat(), bgColor = R.color.wheat)//background of second text of editing
+            .dpToPixels(applicationContext).toFloat(), bgColor = R.color.wheat)
     }
 }
 fun roundedCornerDrawable(borderWidth: Int = 10, borderColor: Int = Color.DKGRAY, cornerRadius: Float = 25F,
                           bgColor: Int = Color.LTGRAY): Drawable {
-    return GradientDrawable().apply { shape = GradientDrawable.RECTANGLE//drawable with color gradient
-        setStroke(borderWidth, borderColor)//only shape border
-        setColor(bgColor)//color definition
-        this.cornerRadius = cornerRadius//nook radius
+    return GradientDrawable().apply {
+        shape = GradientDrawable.RECTANGLE
+        setStroke(borderWidth, borderColor)
+        setColor(bgColor)
+        this.cornerRadius = cornerRadius
     }
 }
 fun Int.dpToPixels(context: Context): Int = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, this

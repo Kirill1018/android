@@ -19,17 +19,8 @@
     <item name="layHeightOfMatSwitch" type="dimen">60dp</item>
     <item name="margStartOfLayOfMatSwitch" type="dimen">171dp</item>
     <item name="margVertOfLayOfMatSwitch" type="dimen">60dp</item>
-    <item name="layWidthOfTextViewOfLastSolInCalc" type="dimen">360dp</item>
-    <item name="layHeightOfTextViewOfLastSolInCalc" type="dimen">90dp</item>
-    <item name="margVertOfLayOfTextViewOfLastSolInCalc" type="dimen">120dp</item>
-    <item name="textSizeOfLastSol" type="dimen">21sp</item>
-    <item name="layWidthOfTextViewOfSol" type="dimen">360dp</item>
-    <item name="layHeightOfTextViewOfSol" type="dimen">60dp</item>
-    <item name="margVertOfLayOfTextViewOfSol" type="dimen">210dp</item>
-    <item name="textSizeOfTextViewOfSol" type="dimen">30sp</item>
-    <item name="layWidthOfRes" type="dimen">360dp</item>
-    <item name="layHeightOfRes" type="dimen">120dp</item>
-    <item name="margVertOfRes" type="dimen">270dp</item>
+    <item name="layHeightOfRes" type="dimen">210dp</item>
+    <item name="margVertOfRes" type="dimen">120dp</item>
     <item name="textSizeOfRes" type="dimen">60sp</item>
     <item name="layHeightOfView" type="dimen">1dp</item>
     <item name="margVertOfViewLay" type="dimen">372dp</item>
@@ -81,11 +72,13 @@
     <item name="layHeightOfImViewInListIt" type="dimen">300dp</item>
     <item name="margVertOfLayOfImViewInListIt" type="dimen">300dp</item>
     <!--recIt-->
-    <item name="layHeightOfLimLayInRecIt" type="dimen">150dp</item>
-    <item name="layHeightOfTemp" type="dimen">60dp</item>
+    <item name="layHeightOfLimLayInRecIt" type="dimen">240dp</item>
+    <item name="layHeightOfMinTemp" type="dimen">60dp</item>
+    <item name="layHeightOfMaxTemp" type="dimen">60dp</item>
     <item name="layHeightOfWeather" type="dimen">60dp</item>
-    <item name="margVertOfWeatherLay" type="dimen">60dp</item>
+    <item name="margVertOfMinTemp" type="dimen">60dp</item>
+    <item name="margVertOfWeatherLay" type="dimen">120dp</item>
     <item name="layWidthOfFor" type="dimen">30dp</item>
     <item name="layHeightOfFor" type="dimen">30dp</item>
-    <item name="margVertOfForLay" type="dimen">120dp</item>
+    <item name="margVertOfForLay" type="dimen">180dp</item>
 </resources>

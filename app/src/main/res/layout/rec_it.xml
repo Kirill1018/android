@@ -5,9 +5,16 @@
     android:layout_height="@dimen/layHeightOfLimLayInRecIt">
 
     <TextView
-        android:id="@+id/temperature"
+        android:id="@+id/maxTemp"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layHeightOfTemp"
+        android:layout_height="@dimen/layHeightOfMaxTemp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layHeightOfMinTemp"
+        android:layout_marginVertical="@dimen/margVertOfMinTemp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView

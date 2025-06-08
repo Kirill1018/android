@@ -1,4 +1,4 @@
-package com.example.topacademy_android.domLay
+package com.example.topacademy_android.domain
 
 data class DataSeries(
     val temp2m: Any,
