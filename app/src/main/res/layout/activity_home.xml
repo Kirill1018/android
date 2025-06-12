@@ -10,7 +10,7 @@
     <Toolbar
         android:id="@+id/tools"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layHeightOfToolPan"
+        android:layout_height="@dimen/heightOfToolPan"
         android:background="@color/purple"
         android:navigationIcon="@drawable/arrow"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginVertical="@dimen/margVertOfHomeAct"
+        android:layout_marginVertical="@dimen/margOfHomeAct"
         android:text="@string/homeAct"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
@@ -27,8 +27,8 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/calcButt"
         android:layout_width="@dimen/widthOfCalcButt"
-        android:layout_height="@dimen/layHeightOfMatButtInMainAct"
-        android:layout_marginVertical="@dimen/margVertOfCalcLay"
+        android:layout_height="@dimen/heightOfMatButt"
+        android:layout_marginVertical="@dimen/margOfCalcLay"
         android:text="@string/calculator_"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,8 +36,8 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/listButt"
         android:layout_width="@dimen/widthOfCalcButt"
-        android:layout_height="@dimen/layHeightOfMatButtInMainAct"
-        android:layout_marginVertical="@dimen/margVertOfListLay"
+        android:layout_height="@dimen/heightOfMatButt"
+        android:layout_marginVertical="@dimen/margOfListLay"
         android:text="@string/listing"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,7 +45,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/temperature"
         android:layout_width="@dimen/widthOfCalcButt"
-        android:layout_height="@dimen/layHeightOfMatButtInMainAct"
+        android:layout_height="@dimen/heightOfMatButt"
         android:layout_marginTop="@dimen/weather"
         android:text="@string/weather_"
         app:layout_constraintLeft_toLeftOf="parent"

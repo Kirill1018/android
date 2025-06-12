@@ -11,7 +11,7 @@
     <Toolbar
         android:id="@+id/tools"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layHeightOfToolPan"
+        android:layout_height="@dimen/heightOfToolPan"
         android:background="@color/purple"
         android:navigationIcon="@drawable/arrow"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -21,8 +21,8 @@
         android:id="@+id/vogue"
         android:layout_width="@dimen/layWidthOfVog"
         android:layout_height="@dimen/layHeightOfVog"
-        android:layout_marginVertical="@dimen/margVertOfVogLay"
-        android:layout_marginStart="@dimen/margStartOfVogLay"
+        android:layout_marginVertical="@dimen/margOfVogLay"
+        android:layout_marginStart="@dimen/startOfVogLay"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,6 +30,6 @@
         android:id="@+id/recView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginVertical="@dimen/margVertOfRecView"
+        android:layout_marginVertical="@dimen/margOfRecView"
         tools:listitem="@layout/rec_it" />
 </androidx.constraintlayout.widget.ConstraintLayout>

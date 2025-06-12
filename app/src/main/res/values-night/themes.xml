@@ -14,11 +14,7 @@
     <style name="rightCol">
         <item name="android:backgroundTint">@color/darkOr</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">@dimen/textSizeOfRightCol</item>
-    </style>
-
-    <style name="textBoxInMainAct">
-        <item name="android:textColor">@color/lightGreen</item>
+        <item name="android:textSize">@dimen/sizeOfRightCol</item>
     </style>
 
     <style name="prognostication">

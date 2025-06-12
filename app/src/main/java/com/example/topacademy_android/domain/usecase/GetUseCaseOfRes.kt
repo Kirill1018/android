@@ -1,4 +1,4 @@
-package com.example.topacademy_android.domain
+package com.example.topacademy_android.domain.usecase
 
 import com.example.topacademy_android.data
     .Result

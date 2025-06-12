@@ -1,6 +1,7 @@
 package com.example.topacademy_android.data
 
-import com.example.topacademy_android.domain.WeatherResponse
+import com.example.topacademy_android.domain
+    .model.WeatherResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

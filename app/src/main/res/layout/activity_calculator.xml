@@ -10,7 +10,7 @@
     <Toolbar
         android:id="@+id/tools"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layHeightOfToolPan"
+        android:layout_height="@dimen/heightOfToolPan"
         android:background="@color/purple"
         android:navigationIcon="@drawable/arrow"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -18,10 +18,10 @@
 
     <com.google.android.material.materialswitch.MaterialSwitch
         android:id="@+id/mode"
-        android:layout_width="@dimen/layWidthOfMatSwitch"
-        android:layout_height="@dimen/layHeightOfMatSwitch"
-        android:layout_marginVertical="@dimen/margVertOfLayOfMatSwitch"
-        android:layout_marginStart="@dimen/margStartOfLayOfMatSwitch"
+        android:layout_width="@dimen/widthOfMatSwitch"
+        android:layout_height="@dimen/heightOfMatSwitch"
+        android:layout_marginVertical="@dimen/margOfMatSwitch"
+        android:layout_marginStart="@dimen/startOfMatSwitch"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,7 +38,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/layHeightOfView"
-        android:layout_marginVertical="@dimen/margVertOfViewLay"
+        android:layout_marginVertical="@dimen/margOfViewLay"
         android:background="@color/gray"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,8 +48,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFirstRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfFirstCol"
+        android:layout_marginVertical="@dimen/margOfFirstRow"
+        android:layout_marginStart="@dimen/startOfFirstCol"
         android:text="@string/totClear"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -59,8 +59,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFirstRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfSecCol"
+        android:layout_marginVertical="@dimen/margOfFirstRow"
+        android:layout_marginStart="@dimen/startOfSecCol"
         android:text="@string/backspace"
         android:textSize="@dimen/backspace"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -71,8 +71,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFirstRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfThirdCol"
+        android:layout_marginVertical="@dimen/margOfFirstRow"
+        android:layout_marginStart="@dimen/startOfThirdCol"
         android:text="@string/percentage"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -82,8 +82,8 @@
         style="@style/rightCol"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFirstRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfFourthCol"
+        android:layout_marginVertical="@dimen/margOfFirstRow"
+        android:layout_marginStart="@dimen/startOfFourthCol"
         android:text="@string/division"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -93,8 +93,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfSecRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfFirstCol"
+        android:layout_marginVertical="@dimen/margOfSecRow"
+        android:layout_marginStart="@dimen/startOfFirstCol"
         android:text="@string/seven"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -104,8 +104,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfSecRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfSecCol"
+        android:layout_marginVertical="@dimen/margOfSecRow"
+        android:layout_marginStart="@dimen/startOfSecCol"
         android:text="@string/eight"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -115,8 +115,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfSecRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfThirdCol"
+        android:layout_marginVertical="@dimen/margOfSecRow"
+        android:layout_marginStart="@dimen/startOfThirdCol"
         android:text="@string/nine"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -126,8 +126,8 @@
         style="@style/rightCol"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfSecRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfFourthCol"
+        android:layout_marginVertical="@dimen/margOfSecRow"
+        android:layout_marginStart="@dimen/startOfFourthCol"
         android:text="@string/multiplying"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -137,8 +137,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfThirdRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfFirstCol"
+        android:layout_marginVertical="@dimen/margOfThirdRow"
+        android:layout_marginStart="@dimen/startOfFirstCol"
         android:text="@string/four"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -148,8 +148,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfThirdRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfSecCol"
+        android:layout_marginVertical="@dimen/margOfThirdRow"
+        android:layout_marginStart="@dimen/startOfSecCol"
         android:text="@string/five"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -159,19 +159,19 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfThirdRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfThirdCol"
+        android:layout_marginVertical="@dimen/margOfThirdRow"
+        android:layout_marginStart="@dimen/startOfThirdCol"
         android:text="@string/six"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/substracting"
+        android:id="@+id/subtracting"
         style="@style/rightCol"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfThirdRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfFourthCol"
+        android:layout_marginVertical="@dimen/margOfThirdRow"
+        android:layout_marginStart="@dimen/startOfFourthCol"
         android:text="@string/subtracting"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -181,8 +181,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFourthRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfFirstCol"
+        android:layout_marginVertical="@dimen/margOfFourthRow"
+        android:layout_marginStart="@dimen/startOfFirstCol"
         android:text="@string/one"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -192,8 +192,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFourthRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfSecCol"
+        android:layout_marginVertical="@dimen/margOfFourthRow"
+        android:layout_marginStart="@dimen/startOfSecCol"
         android:text="@string/two"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -203,8 +203,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFourthRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfThirdCol"
+        android:layout_marginVertical="@dimen/margOfFourthRow"
+        android:layout_marginStart="@dimen/startOfThirdCol"
         android:text="@string/three"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -214,8 +214,8 @@
         style="@style/rightCol"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFourthRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfFourthCol"
+        android:layout_marginVertical="@dimen/margOfFourthRow"
+        android:layout_marginStart="@dimen/startOfFourthCol"
         android:text="@string/addition"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -225,8 +225,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFifthRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfFirstCol"
+        android:layout_marginVertical="@dimen/margOfFifthRow"
+        android:layout_marginStart="@dimen/startOfFirstCol"
         android:text="@string/zero"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -236,8 +236,8 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFifthRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfSecCol"
+        android:layout_marginVertical="@dimen/margOfFifthRow"
+        android:layout_marginStart="@dimen/startOfSecCol"
         android:text="@string/decNumb"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -247,10 +247,10 @@
         style="@style/key"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFifthRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfThirdCol"
+        android:layout_marginVertical="@dimen/margOfFifthRow"
+        android:layout_marginStart="@dimen/startOfThirdCol"
         android:text="@string/changNumbSign"
-        android:textSize="@dimen/textSizeOfChangSignOfNumb"
+        android:textSize="@dimen/sizeOfChangSign"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -259,8 +259,8 @@
         style="@style/rightCol"
         android:layout_width="@dimen/layWidthOfKey"
         android:layout_height="@dimen/layHeightOfKey"
-        android:layout_marginVertical="@dimen/margVertOfKeyLayOfFifthRow"
-        android:layout_marginStart="@dimen/margStartOfLayOfFourthCol"
+        android:layout_marginVertical="@dimen/margOfFifthRow"
+        android:layout_marginStart="@dimen/startOfFourthCol"
         android:text="@string/equality"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

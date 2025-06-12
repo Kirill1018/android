@@ -1,6 +1,5 @@
 package com.example.topacademy_android
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toolbar
@@ -10,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.topacademy_android.presentation
+    .viewmodel.ViewModelOfCalc
 import com.google.android.material
     .button.MaterialButton
 import com.google.android.material
@@ -32,7 +33,7 @@ class Calculator : AppCompatActivity() {
             else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
         val toolBar: Toolbar = findViewById(R.id.tools)
-        toolBar.setNavigationOnClickListener { startActivity(Intent(this, HomeActivity::class.java)) }
+        toolBar.setNavigationOnClickListener { finish() }
         val clearKey: MaterialButton = findViewById(R.id.clear)
         val backKey: MaterialButton = findViewById(R.id.backward)
         val percKey: MaterialButton = findViewById(R.id.percent)
@@ -44,7 +45,7 @@ class Calculator : AppCompatActivity() {
         val fourKey: MaterialButton = findViewById(R.id.four)
         val fiveKey: MaterialButton = findViewById(R.id.five)
         val sixKey: MaterialButton = findViewById(R.id.six)
-        val dedKey: MaterialButton = findViewById(R.id.substracting)
+        val dedKey: MaterialButton = findViewById(R.id.subtracting)
         val oneKey: MaterialButton = findViewById(R.id.one)
         val twoKey: MaterialButton = findViewById(R.id.two)
         val threeKey: MaterialButton = findViewById(R.id.three)
@@ -167,8 +168,7 @@ class Calculator : AppCompatActivity() {
         }
         resSign.setOnClickListener {
             this.viewModelOfCalc.solve(output)
-            this.viewModelOfCalc.getEx.observe(this) { solution -> effect
-                .text = solution }
+            effect.text = this.viewModelOfCalc.outcome
             output = String()
         }
     }

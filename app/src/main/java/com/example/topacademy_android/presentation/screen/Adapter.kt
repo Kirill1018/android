@@ -1,4 +1,4 @@
-package com.example.topacademy_android
+package com.example.topacademy_android.presentation.screen
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.topacademy_android.R
 import com.example.topacademy_android.domain
-    .DataSeries
+    .model.DataSeries
 import com.google.gson.internal
     .LinkedTreeMap
 import kotlin.collections.List
@@ -16,10 +17,14 @@ import kotlin.collections.List
 class RecAdapter(private var dataSer: List<DataSeries>, private val maud: Boolean) : RecyclerView.Adapter<RecAdapter.ViewHoldOfRec>() {
     inner class ViewHoldOfRec(private val binding: View) : RecyclerView.ViewHolder(binding.rootView) {
         fun bind(dataEp: DataSeries, maude: Boolean) {
-            val textOfMaxTemp: TextView = binding.findViewById(R.id.maxTemp)
-            val textOfMinTemp: TextView = binding.findViewById(R.id.minTemp)
-            val forecast: TextView = binding.findViewById(R.id.weather)
-            val prediction: ImageView = binding.findViewById(R.id.predict)
+            val textOfMaxTemp: TextView = this.binding.findViewById(R.id
+                .maxTemp)
+            val textOfMinTemp: TextView = this.binding.findViewById(R.id
+                .minTemp)
+            val forecast: TextView = this.binding.findViewById(R.id
+                .weather)
+            val prediction: ImageView = this.binding.findViewById(R.id
+                .predict)
             val prognosis = dataEp.weather//weather
             val fever = dataEp.temp2m as LinkedTreeMap<*, *>
             val significances = fever.values
