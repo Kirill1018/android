@@ -1,6 +1,5 @@
 package com.example.topacademy_android
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
@@ -13,7 +12,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.topacademy_android.data
     .RetrofitClient
 import com.example.topacademy_android.domain
-    .WeatherResponse
+    .model.WeatherResponse
+import com.example.topacademy_android.presentation
+    .screen.RecAdapter
 import com.google.android.material
     .materialswitch.MaterialSwitch
 import retrofit2.Call
@@ -31,7 +32,7 @@ class Weather : AppCompatActivity() {
             insets
         }
         val toolBar: Toolbar = findViewById(R.id.tools)
-        toolBar.setNavigationOnClickListener { startActivity(Intent(this, HomeActivity::class.java)) }
+        toolBar.setNavigationOnClickListener { finish() }
         val recycler: RecyclerView = findViewById(R.id.recView)//flexible module and productive component for display lists
         recycler.layoutManager = LinearLayoutManager(this)
         val nightMode = AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES

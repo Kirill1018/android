@@ -9,17 +9,17 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="@dimen/layWidthOfLimLayOfAuth"
-        android:layout_height="@dimen/layHeightOfLimLayOfAuth"
-        android:layout_marginVertical="@dimen/margVertOfLayOfLimLayOfAuth"
-        android:layout_marginStart="@dimen/margStartOfLayOfLimLayOfAuth"
+        android:layout_width="@dimen/authWidth"
+        android:layout_height="@dimen/authHeight"
+        android:layout_marginVertical="@dimen/margVertOfAuth"
+        android:layout_marginStart="@dimen/margStartOfAuth"
         android:background="@color/lightGreen"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_width="@dimen/layWidthOfTextViewOfLog"
-            android:layout_height="@dimen/layHeightOfTextViewOfLog"
+            android:layout_width="@dimen/logWidth"
+            android:layout_height="@dimen/logHeight"
             android:text="@string/logInToProf"
             android:textAlignment="center"
             android:textColor="@color/yellow"
@@ -30,10 +30,10 @@
 
         <EditText
             android:id="@+id/login"
-            android:layout_width="@dimen/layWidthOfEdTextOfLog"
-            android:layout_height="@dimen/layHeightOfEdTextOfLog"
-            android:layout_marginVertical="@dimen/margVertOfLayOfEdTextOfLog"
-            android:layout_marginStart="@dimen/margStartOfAuthLay"
+            android:layout_width="@dimen/widthOfLogText"
+            android:layout_height="@dimen/heightOfLogText"
+            android:layout_marginVertical="@dimen/margOfLogText"
+            android:layout_marginStart="@dimen/startOfAuthLay"
             android:autofillHints="name"
             android:background="@color/darkOr"
             android:hint="@string/behalf"
@@ -46,10 +46,10 @@
 
         <EditText
             android:id="@+id/passphrase"
-            android:layout_width="@dimen/layWidthOfEdTextOfPar"
-            android:layout_height="@dimen/layHeightOfEdTextOfPar"
-            android:layout_marginVertical="@dimen/margVertOfLayOfEdTextOfPar"
-            android:layout_marginStart="@dimen/margStartOfAuthLay"
+            android:layout_width="@dimen/parWidth"
+            android:layout_height="@dimen/parHeight"
+            android:layout_marginVertical="@dimen/parMarg"
+            android:layout_marginStart="@dimen/startOfAuthLay"
             android:autofillHints="password"
             android:background="@color/yellow"
             android:hint="@string/parole"
@@ -62,10 +62,10 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/material"
-            android:layout_width="@dimen/layWidthOfMatButtInMainAct"
-            android:layout_height="@dimen/layHeightOfMatButtInMainAct"
-            android:layout_marginVertical="@dimen/margVertOfLayOfMatButtInMainAct"
-            android:layout_marginStart="@dimen/margStartOfAuthLay"
+            android:layout_width="@dimen/widthOfMatButt"
+            android:layout_height="@dimen/heightOfMatButt"
+            android:layout_marginVertical="@dimen/margOfMatButt"
+            android:layout_marginStart="@dimen/startOfAuthLay"
             android:text="@string/beginning"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

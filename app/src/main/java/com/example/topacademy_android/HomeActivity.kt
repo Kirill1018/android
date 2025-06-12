@@ -27,6 +27,6 @@ class HomeActivity : AppCompatActivity() {
         listButt.setOnClickListener { startActivity(Intent(this, List::class.java).apply {  }) }
         weather.setOnClickListener { startActivity(Intent(this, Weather::class.java).apply {  }) }
         val toolBar: Toolbar = findViewById(R.id.tools)
-        toolBar.setNavigationOnClickListener { startActivity(Intent(this, MainActivity::class.java)) }
+        toolBar.setNavigationOnClickListener { finish() }
     }
 }

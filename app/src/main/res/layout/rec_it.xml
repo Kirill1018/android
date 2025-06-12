@@ -2,33 +2,33 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/layHeightOfLimLayInRecIt">
+    android:layout_height="@dimen/heightOfRecIt">
 
     <TextView
         android:id="@+id/maxTemp"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layHeightOfMaxTemp"
+        android:layout_height="@dimen/heightOfMaxTemp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/minTemp"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layHeightOfMinTemp"
-        android:layout_marginVertical="@dimen/margVertOfMinTemp"
+        android:layout_height="@dimen/heightOfMinTemp"
+        android:layout_marginVertical="@dimen/margOfMinTemp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/weather"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layHeightOfWeather"
-        android:layout_marginVertical="@dimen/margVertOfWeatherLay"
+        android:layout_height="@dimen/weatherHeight"
+        android:layout_marginVertical="@dimen/margOfWeatherLay"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/predict"
-        android:layout_width="@dimen/layWidthOfFor"
-        android:layout_height="@dimen/layHeightOfFor"
-        android:layout_marginVertical="@dimen/margVertOfForLay"
+        android:layout_width="@dimen/forWidth"
+        android:layout_height="@dimen/forHeight"
+        android:layout_marginVertical="@dimen/vertOfForLay"
         android:contentDescription="@string/weather_"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

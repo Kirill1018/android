@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val bordRadOfEdText = 2
         val cornRadOfEdText = 10
         edText1.background = roundedCornerDrawable(bordRadOfEdText.dpToPixels(applicationContext), R.color
-            .darkScar, cornRadOfEdText.dpToPixels(applicationContext).toFloat())
+            .darkScarlet, cornRadOfEdText.dpToPixels(applicationContext).toFloat())
         edText2.background = roundedCornerDrawable(borderWidth = bordRadOfEdText, borderColor = R.color.carmine, cornerRadius = cornRadOfEdText
             .dpToPixels(applicationContext).toFloat(), bgColor = R.color.wheat)
     }

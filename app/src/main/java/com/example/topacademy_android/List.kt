@@ -1,6 +1,5 @@
 package com.example.topacademy_android
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
@@ -10,7 +9,9 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.topacademy_android.domain
-    .Car
+    .model.Car
+import com.example.topacademy_android.presentation
+    .screen.CarAdapter
 
 class List : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +38,6 @@ class List : AppCompatActivity() {
         recycler.layoutManager = LinearLayoutManager(this)
         recycler.adapter = carAdapter
         val toolBar: Toolbar = findViewById(R.id.tools)
-        toolBar.setNavigationOnClickListener { startActivity(Intent(this, HomeActivity::class.java)) }
+        toolBar.setNavigationOnClickListener { finish() }
     }
 }

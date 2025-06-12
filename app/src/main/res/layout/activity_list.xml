@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/layHeightOfLimLayInList"
+    android:layout_height="@dimen/heightOfListLay"
     tools:context=".List">
 
     <Toolbar
         android:id="@+id/tools"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/layHeightOfToolPan"
+        android:layout_height="@dimen/heightOfToolPan"
         android:background="@color/purple"
         android:navigationIcon="@drawable/arrow"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -20,7 +20,7 @@
         android:id="@+id/machines"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginVertical="@dimen/margVertOfLayOfListViewInList"
+        android:layout_marginVertical="@dimen/listMarg"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/list_it" />
