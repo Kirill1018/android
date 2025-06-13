@@ -17,10 +17,12 @@ import com.example.topacademy_android.presentation
     .screen.RecAdapter
 import com.google.android.material
     .materialswitch.MaterialSwitch
+import dagger.hilt.android.AndroidEntryPoint
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+@AndroidEntryPoint
 class Weather : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,7 +49,7 @@ class Weather : AppCompatActivity() {
 }
 fun fetchWeather(latitude: Double, longitude: Double, recBoil: RecyclerView,
                  mode: Boolean) {
-    val call = RetrofitClient.weatherApi.weatherForecast(latitude = latitude, longitude = longitude)//invocation of a retrofit method that sends a request to a webserver and returns a response
+    val call = RetrofitClient.weatherApi().weatherForecast(latitude = latitude, longitude = longitude)//invocation of a retrofit method that sends a request to a webserver and returns a response
     call.enqueue(object: Callback<WeatherResponse> {
         override fun onResponse(call: Call<WeatherResponse>, response: Response<WeatherResponse>) { if (response.isSuccessful) {
             val weatherData = response.body()//response

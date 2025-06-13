@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.devtools.ksp")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -53,4 +55,6 @@ dependencies {
     implementation(libs.dev.karith)
     implementation(libs.androidx.viewmodel)
     implementation(libs.androidx.livedata)
+    implementation(libs.com.android)
+    ksp(libs.com.compiler)
 }

@@ -16,6 +16,8 @@ filamentAndroid = "1.17.1"
 karith = "0.1.0"
 viewmodel-ktx = "2.9.1"
 livedata-ktx = "2.9.1"
+android = "2.56.2"
+compiler = "2.56.2"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -32,6 +34,8 @@ filament-android = { group = "com.google.ar.sceneform", name = "filament-android
 dev-karith = { group = "dev.franckyi", name = "karith", version.ref = "karith" }
 androidx-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "viewmodel-ktx" }
 androidx-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "livedata-ktx" }
+com-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "android" }
+com-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "compiler" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
