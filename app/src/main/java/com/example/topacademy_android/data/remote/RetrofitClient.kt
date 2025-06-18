@@ -1,5 +1,7 @@
-package com.example.topacademy_android.data
+package com.example.topacademy_android.data.remote
 
+import com.example.topacademy_android.data
+    .repository.WeatherApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -9,6 +11,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+
 @Module
 @InstallIn(ActivityComponent::class)
 object RetrofitClient {

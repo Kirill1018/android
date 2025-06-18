@@ -8,66 +8,32 @@
     android:background="@color/gray"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="@dimen/authWidth"
-        android:layout_height="@dimen/authHeight"
-        android:layout_marginVertical="@dimen/margVertOfAuth"
-        android:layout_marginStart="@dimen/margStartOfAuth"
-        android:background="@color/lightGreen"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightOfToolPan"
+        android:background="@color/purple"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="@dimen/logWidth"
-            android:layout_height="@dimen/logHeight"
-            android:text="@string/logInToProf"
-            android:textAlignment="center"
-            android:textColor="@color/yellow"
-            android:textSize="@dimen/textSizeOfLog"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_nav"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/fragment_main" />
 
-        <EditText
-            android:id="@+id/login"
-            android:layout_width="@dimen/widthOfLogText"
-            android:layout_height="@dimen/heightOfLogText"
-            android:layout_marginVertical="@dimen/margOfLogText"
-            android:layout_marginStart="@dimen/startOfAuthLay"
-            android:autofillHints="name"
-            android:background="@color/darkOr"
-            android:hint="@string/behalf"
-            android:inputType="text"
-            android:textAlignment="center"
-            android:textColor="@color/lightGreen"
-            android:textColorHint="@color/darkGreen"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/passphrase"
-            android:layout_width="@dimen/parWidth"
-            android:layout_height="@dimen/parHeight"
-            android:layout_marginVertical="@dimen/parMarg"
-            android:layout_marginStart="@dimen/startOfAuthLay"
-            android:autofillHints="password"
-            android:background="@color/yellow"
-            android:hint="@string/parole"
-            android:inputType="text"
-            android:textAlignment="center"
-            android:textColor="@color/lightGreen"
-            android:textColorHint="@color/purple"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/material"
-            android:layout_width="@dimen/widthOfMatButt"
-            android:layout_height="@dimen/heightOfMatButt"
-            android:layout_marginVertical="@dimen/margOfMatButt"
-            android:layout_marginStart="@dimen/startOfAuthLay"
-            android:text="@string/beginning"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="@dimen/widthOfBottNav"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/startOfBottNav"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

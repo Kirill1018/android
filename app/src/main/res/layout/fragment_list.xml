@@ -2,11 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    style="@style/prognostication"
+    android:id="@+id/listLay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Weather">
+    tools:context=".ListFragment">
 
     <Toolbar
         android:id="@+id/tools"
@@ -17,19 +16,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.materialswitch.MaterialSwitch
-        android:id="@+id/vogue"
-        android:layout_width="@dimen/layWidthOfVog"
-        android:layout_height="@dimen/layHeightOfVog"
-        android:layout_marginVertical="@dimen/margOfVogLay"
-        android:layout_marginStart="@dimen/startOfVogLay"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recView"
+        android:id="@+id/machines"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginVertical="@dimen/margOfRecView"
-        tools:listitem="@layout/rec_it" />
+        android:layout_marginVertical="@dimen/listMarg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/list_it" />
 </androidx.constraintlayout.widget.ConstraintLayout>

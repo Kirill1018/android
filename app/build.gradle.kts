@@ -57,4 +57,6 @@ dependencies {
     implementation(libs.androidx.livedata)
     implementation(libs.com.android)
     ksp(libs.com.compiler)
+    implementation(libs.androidx.ktx)
+    implementation(libs.androidx.ui.ktx)
 }

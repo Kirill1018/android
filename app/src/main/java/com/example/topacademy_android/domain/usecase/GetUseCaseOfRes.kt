@@ -1,7 +1,7 @@
 package com.example.topacademy_android.domain.usecase
 
 import com.example.topacademy_android.data
-    .Result
+    .local.Result
 import dev.franckyi.karith.api
     .result
 
