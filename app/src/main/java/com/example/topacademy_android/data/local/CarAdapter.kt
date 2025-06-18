@@ -1,4 +1,4 @@
-package com.example.topacademy_android.presentation.screen
+package com.example.topacademy_android.data.local
 
 import android.view.LayoutInflater
 import android.view.View

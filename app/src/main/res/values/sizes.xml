@@ -52,6 +52,8 @@
     <item name="parWidth" type="dimen">210dp</item>
     <item name="parHeight" type="dimen">60dp</item>
     <item name="parMarg" type="dimen">120dp</item>
+    <item name="widthOfBottNav" type="dimen">300dp</item>
+    <item name="startOfBottNav" type="dimen">60dp</item>
     <!--weather-->
     <item name="layWidthOfVog" type="dimen">90dp</item>
     <item name="layHeightOfVog" type="dimen">60dp</item>
@@ -81,4 +83,8 @@
     <item name="forWidth" type="dimen">30dp</item>
     <item name="forHeight" type="dimen">30dp</item>
     <item name="vertOfForLay" type="dimen">180dp</item>
+    <!--main fragment-->
+    <item name="entryHeight" type="dimen">90dp</item>
+    <item name="entryMarg" type="dimen">420dp</item>
+    <item name="textSizeOfEnt" type="dimen">30sp</item>
 </resources>

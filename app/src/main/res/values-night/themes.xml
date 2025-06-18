@@ -20,4 +20,9 @@
     <style name="prognostication">
         <item name="android:background">@color/darkGray</item>
     </style>
+
+    <style name="ThemeOverlay.Topacademy_android.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_900</item>
+        <item name="fullscreenTextColor">@color/light_blue_A400</item>
+    </style>
 </resources>

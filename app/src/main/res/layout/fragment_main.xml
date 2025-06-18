@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/authWidth"
+        android:layout_height="@dimen/authHeight"
+        android:layout_marginVertical="@dimen/margVertOfAuth"
+        android:layout_marginStart="@dimen/margStartOfAuth"
+        android:background="@color/lightGreen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="@dimen/logWidth"
+            android:layout_height="@dimen/logHeight"
+            android:text="@string/logInToProf"
+            android:textAlignment="center"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/textSizeOfLog"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="@dimen/widthOfLogText"
+            android:layout_height="@dimen/heightOfLogText"
+            android:layout_marginVertical="@dimen/margOfLogText"
+            android:layout_marginStart="@dimen/startOfAuthLay"
+            android:autofillHints="name"
+            android:background="@color/darkOr"
+            android:hint="@string/behalf"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/lightGreen"
+            android:textColorHint="@color/darkGreen"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/passphrase"
+            android:layout_width="@dimen/parWidth"
+            android:layout_height="@dimen/parHeight"
+            android:layout_marginVertical="@dimen/parMarg"
+            android:layout_marginStart="@dimen/startOfAuthLay"
+            android:autofillHints="password"
+            android:background="@color/yellow"
+            android:hint="@string/parole"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/lightGreen"
+            android:textColorHint="@color/purple"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/material"
+            android:layout_width="@dimen/widthOfMatButt"
+            android:layout_height="@dimen/heightOfMatButt"
+            android:layout_marginVertical="@dimen/margOfMatButt"
+            android:layout_marginStart="@dimen/startOfAuthLay"
+            android:text="@string/beginning"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/entryHeight"
+        android:layout_marginVertical="@dimen/entryMarg"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/textSizeOfEnt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.topacademy_android.presentation.screen
+package com.example.topacademy_android.data.remote
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.topacademy_android.R
+import com.example.topacademy_android.data
+    .local.setCol
 import com.example.topacademy_android.domain
     .model.DataSeries
 import com.google.gson.internal
@@ -33,21 +35,23 @@ class RecAdapter(private var dataSer: List<DataSeries>, private val maud: Boolea
             val topTemp = "maximum temperature: $maxTemp"
             val lowTemp = "minimum temperature: $minTemp"
             val predict = "weather: $prognosis"
+            val cyanCol = Color.CYAN
+            val magCol = Color.MAGENTA
             if (maude) {
                 if (maxTemp >= 30) setCol(textOfMaxTemp, textOfMinTemp, forecast,
-                    Color.rgb(255, 142, 0), Color.CYAN)
+                    Color.rgb(255, 142, 0), cyanCol)
                 else if (maxTemp > 20) setCol(textOfMaxTemp, textOfMinTemp, forecast,
-                    Color.rgb(18, 53, 36), Color.MAGENTA)
+                    Color.rgb(18, 53, 36), magCol)
                 else setCol(textOfMaxTemp, textOfMinTemp, forecast,
-                    Color.rgb(138, 43, 226), Color.CYAN)
+                    Color.rgb(138, 43, 226), cyanCol)
             }
             else {
                 if (maxTemp >= 30) setCol(textOfMaxTemp, textOfMinTemp, forecast,
-                    Color.RED, Color.CYAN)
+                    Color.RED, cyanCol)
                 else if (maxTemp > 20) setCol(textOfMaxTemp, textOfMinTemp, forecast,
-                    Color.YELLOW, Color.MAGENTA)
+                    Color.YELLOW, magCol)
                 else setCol(textOfMaxTemp, textOfMinTemp, forecast,
-                    Color.BLUE, Color.CYAN)
+                    Color.BLUE, cyanCol)
             }
             if (prognosis == "lightrain") prediction.setImageResource(R.drawable.lightrain)
             else if (prognosis == "cloudy") prediction.setImageResource(R.drawable.cloud)
@@ -65,13 +69,4 @@ class RecAdapter(private var dataSer: List<DataSeries>, private val maud: Boolea
     }
     override fun onBindViewHolder(holder: ViewHoldOfRec, position: Int) = holder.bind(this.dataSer[position], this.maud)
     override fun getItemCount(): Int = this.dataSer.size
-}
-fun setCol(heat: TextView, coldTemp: TextView, predict: TextView,
-           tempCol: Int, progCol: Int) {
-    heat.setBackgroundColor(tempCol)
-    heat.setTextColor(progCol)
-    coldTemp.setBackgroundColor(tempCol)
-    coldTemp.setTextColor(progCol)
-    predict.setBackgroundColor(tempCol)
-    predict.setTextColor(progCol)
 }

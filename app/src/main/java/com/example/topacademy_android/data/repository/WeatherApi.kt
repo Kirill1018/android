@@ -1,4 +1,4 @@
-package com.example.topacademy_android.data
+package com.example.topacademy_android.data.repository
 
 import com.example.topacademy_android.domain
     .model.WeatherResponse
