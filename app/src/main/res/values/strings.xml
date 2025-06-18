@@ -35,10 +35,10 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <!--navigation menu-->
-    <string name="basPart">main fragment</string>
-    <string name="calcPiece">calculator fragment</string>
-    <string name="listPiece">list fragment</string>
-    <string name="weatherPiece">weather fragment</string>
+    <string name="basPart">authorization</string>
+    <string name="calcPiece">calculator</string>
+    <string name="listPiece">list</string>
+    <string name="weatherPiece">weather</string>
     <!--main fragment-->
     <string name="accEnt">account is entered</string>
 </resources>

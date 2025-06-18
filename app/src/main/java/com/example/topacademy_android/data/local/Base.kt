@@ -2,6 +2,7 @@ package com.example.topacademy_android.data.local
 
 import android.widget.EditText
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
 import com.example.topacademy_android.MainFragment
 import com.example.topacademy_android.R
@@ -20,15 +21,17 @@ object Base {
         val requireActivity = mainFragment.requireActivity()
         val bottomNavigationView: BottomNavigationView = requireActivity.findViewById(Element.navigation)
         val enter = requireActivity.getText(R.string.accEnt)
-        if (mainFragment.isEnt) {
-            bottomNavigationView.isVisible = true
-            entryText?.text = enter
+        val constraintLayout: ConstraintLayout? = view?.findViewById(R.id.layout)
+        if (mainFragment.isEnt) hide(constraintLayout!!, bottomNavigationView, entryText!!,
+            enter)
+        else {
+            constraintLayout?.isVisible = true
+            bottomNavigationView.isVisible = false
         }
-        else bottomNavigationView.isVisible = false
         matButt?.setOnClickListener {
             mainFragment.isEnt = true
-            bottomNavigationView.isVisible = true
-            entryText?.text = enter
+            hide(constraintLayout!!, bottomNavigationView, entryText!!,
+                enter)
         }
         val edText1: EditText? = view?.findViewById(R.id.login)//password overlay over text view that configures itself to be editable
         val edText2: EditText? = view?.findViewById(R.id.passphrase)
