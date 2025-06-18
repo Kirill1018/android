@@ -7,9 +7,13 @@ import android.graphics.drawable.GradientDrawable
 import android.util.TypedValue
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.topacademy_android.WeatherFragment
+import com.google.android.material
+    .bottomnavigation.BottomNavigationView
 
 fun roundedCornerDrawable(borderWidth: Int = 10, borderColor: Int = Color.DKGRAY, cornerRadius: Float = 25F,
                           bgColor: Int = Color.LTGRAY): Drawable = GradientDrawable().apply {
@@ -41,4 +45,10 @@ fun setCol(heat: TextView, coldTemp: TextView, predict: TextView,
     coldTemp.setTextColor(progCol)
     predict.setBackgroundColor(tempCol)
     predict.setTextColor(progCol)
+}
+fun hide(layout: ConstraintLayout, bottNav: BottomNavigationView, textView: TextView,
+         text: CharSequence) {
+    layout.isVisible = false
+    bottNav.isVisible = true
+    textView.text = text
 }

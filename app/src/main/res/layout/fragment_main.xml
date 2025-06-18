@@ -9,6 +9,7 @@
     tools:context=".MainFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
         android:layout_width="@dimen/authWidth"
         android:layout_height="@dimen/authHeight"
         android:layout_marginVertical="@dimen/margVertOfAuth"
